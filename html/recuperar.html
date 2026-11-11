@@ -11,23 +11,24 @@
 <body>
     <div id="header">
         <a href="entrar.html">Voltar</a>
-        <h1>Recupera Senha</h1>
+        <h1>Recuperar Senha</h1>
     </div>
     <form action="entrar.html" method="get">
+        <div id="main">
+            <div id="campo-senha">
+                <label for="senha">Digite uma nova senha: </label>
+                <input type="password" id="senha" name="senha" autocomplete="new-password" minlength="8" required>
+            </div>
+            <br>
+            <div id="campo-senha2">
+                <label for="senha2">Digite novamente: </label>
+                <input type="password" id="senha2" name="senha2" autocomplete="new-password" minlength="8" required>
+                <p id="dica-senha">Use pelo menos 8 caracteres.</p>
+            </div>
 
-        <div id="campo-senha">
-            <label for="senha">Digite uma nova senha: </label>
-            <input type="password" id="senha" name="senha" autocomplete="new-password" minlength="8" required>
-        </div>
-        <br>
-        <div id="campo-senha2">
-            <label for="senha">Digite novamente: </label>
-            <input type="password" id="senha" name="senha" autocomplete="new-password" minlength="8" required>
-            <p id="dica-senha">Use pelo menos 8 caracteres.</p>
-        </div>
-
-        <div id="botao">
-            <button type="submit">Confirmar </button>
+            <div id="botao">
+                <button type="submit">Confirmar </button>
+            </div>
         </div>
     </form>
 </body>
