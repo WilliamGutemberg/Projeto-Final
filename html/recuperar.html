@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha - Saúde sem Filas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <a href="entrar.html">Voltar</a>
+        <h1>Recupera Senha</h1>
+    </div>
+    <form action="entrar.html" method="get">
+
+        <div id="campo-senha">
+            <label for="senha">Digite uma nova senha: </label>
+            <input type="password" id="senha" name="senha" autocomplete="new-password" minlength="8" required>
+        </div>
+        <br>
+        <div id="campo-senha2">
+            <label for="senha">Digite novamente: </label>
+            <input type="password" id="senha" name="senha" autocomplete="new-password" minlength="8" required>
+            <p id="dica-senha">Use pelo menos 8 caracteres.</p>
+        </div>
+
+        <div id="botao">
+            <button type="submit">Confirmar </button>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check in - Saúde sem Filas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <a href="inicio.html">Voltar</a>
+        <h1>Check-in digital</h1>
+        <h3>Sua consulta</h3>
+    </div>
+
+    <div id="check-in">
+        <p>Cardiologia - Hoje 14:30 <br>
+            Dr.Carlos Lima - Clinica Mais Vida , Centro <br></p>
+        <h3>Antes de continuar, confirme: </h3>
+
+
+       <form action="checkinrealizado.html" method="get">
+            <label><input type="checkbox" name="dados-corretos" required>Meus dados estão dados-corretos: <b>Usuario(a) do CPF final 0000. </b> </label>
+            <label> <input type="checkbox" name="na-unidqade" required> Chegarei em até 30 minutos.</label>
+
+            <p><b>Se perder o horário, vá a recepção.</b></p>
+
+            <button type="submit">Realizar Check-in</button>
+       </form>
+</body>
+
+</html>

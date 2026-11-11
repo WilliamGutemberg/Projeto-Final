@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consulta - Saúde sem Filas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <a href="inicio.html">Voltar</a>
+        <h1>Agendar Consulta</h1>
+    </div>
+
+    <form action="consultaagendada.html" method="get">
+
+    <div id="agendar">
+        <label for="unidade">Unidade de Atendimento</label>
+        <select name="unidade" id="unidade">
+            <option value="">Clinica Mais Vida</option>
+            <option value="">Hospital 1</option>
+            <option value="">Hospital 2</option>
+        </select>
+    </div>
+
+    <div id="especialidade">
+        <fieldset>
+            <legend>1.Especialidade</legend>
+
+            <label><input type="radio" name="especialidade " value="Clinica geral">Clinica geral </label>
+            <label><input type="radio" name="especialidade " value="Cardiologia">Cardiologia </label>
+            <label><input type="radio" name="especialidade " value="Dermatologia">Dermatologia </label>
+            <label><input type="radio" name="especialidade " value="Pediatra">Pediatra </label>
+
+        </fieldset>
+    </div>
+
+    <div id="dia">
+        <fieldset>
+            <legend>2.Dia</legend>
+
+            <label><input type="radio" name="dia " value="09-11-2026">Seg 09/11</label>
+            <label><input type="radio" name="dia " value="10-11-2026">Ter 10/11</label>
+            <label><input type="radio" name="dia " value="11-11-2026">Qua 11/11</label>
+            <label><input type="radio" name="dia " value="12-11-2026">Qui 12/11</label>
+
+        </fieldset>
+    </div>
+
+    <div id="horario">
+        <fieldset>
+            <legend>3.Horário</legend>
+
+            <label><input type="radio" name="horario" value="08:00">08:00</label>
+            <label><input type="radio" name="horario" value="09:00">09:00</label>
+            <label><input type="radio" name="horario" value="10:00">10:00</label>
+            <label><input type="radio" name="horario" value="15:00">15:00</label>
+
+        </fieldset>
+    </div>
+    <div id="botao">
+        <br><button type="submit">Confirmar</button>
+    </div>
+    </form>
+</body>
+
+</html>

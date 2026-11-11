@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda do dia - Saúde Sem Filas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <p>Saúde Sem Filas · Clínica Vida Plena, Centro</p>
+        <p>Recepção - Funcionario</p>
+        <nav>
+            <a href="entrar.html">Sair /</a>
+
+            <a href="painel_funcionario.html">Painel da fila</a>
+        </nav>
+    </div>
+
+    <div id="titulo">
+        <h1>Agenda do dia</h1>
+        <p>Sexta-feira, 06/11</p>
+    </div>
+
+    <form action="funcionario_agenda.html" method="get">
+        <div id="filtros">
+            <h2>Filtros</h2>
+
+            <label for="busca">Buscar paciente</label>
+            <input type="search" id="busca" name="busca" placeholder="Nome ou CPF">
+
+            <label for="situacao">Situação</label>
+            <select id="situacao" name="situacao">
+                <option>Todas</option>
+                <option>Agendada</option>
+                <option>Check-in feito</option>
+                <option>Em atendimento</option>
+                <option>Concluída</option>
+                <option>Faltou</option>
+            </select>
+
+            <button type="submit">Filtrar</button>
+        </div>
+    </form>
+
+    <div id="consultas">
+        <h2>Consultas (1)</h2>
+        <table>
+            <tr>
+                <th>Hora</th>
+                <th>Paciente</th>
+                <th>Especialidade</th>
+                <th>Profissional</th>
+                <th>Situação</th>
+            </tr>
+            <tr>
+                <td>14:30</td>
+                <td>Maria Souza</td>
+                <td>Cardiologia</td>
+                <td>Dr. Carlos Lima</td>
+                <td>Check-in feito</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

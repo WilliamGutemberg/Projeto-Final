@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta - Saúde Sem Filas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <a href="entrar.html">Voltar</a>
+        <h1>Criar Conta</h1>
+    </div>
+    <div id="main">
+        <P>Preencha seus dados.
+            Campos com * são obrigatorios.
+        </P>
+        <form action="inicio.html" method="get">
+
+            <div id="campo-nome">
+                <label for="nome">Nome completo *</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+            </div>
+
+            <div id="campo-cpf">
+                <label for="cpf">CPF *</label>
+                <input type="text" id="cpf" name="cpf" inputmode="numeric" placeholder="000.000.000-00"
+                    title="Digite o CPF com 11 números incluindo ponto e -" required>
+            </div>
+            <div id="campo-nascimento">
+                <label for="nascimento">Data de nascimento *</label>
+                <input type="date" id="nascimento" name="nascimento" autocomplete="bday" required>
+            </div>
+
+            <div id="campo-telefone">
+                <label for="telefone">Número de Telefone *</label>
+                <input type="tel" id="telefone" name="telefone" autocomplete="tel" required>
+            </div>
+
+            <div id="campo-email">
+                <label for="email">E-mail * </label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+
+            <div id="campo-senha">
+                <label for="senha">Crie uma senha *</label>
+                <input type="password" id="senha" name="senha" autocomplete="new-password" minlength="8" required>
+                <p id="dica-senha">Use pelo menos 8 caracteres.</p>
+            </div>
+
+            <div id="lembrete">
+                <label>
+                    <input type="checkbox" name="lembretes" checked>
+                    Quero receber lembretes das minhas consultas por celular.
+                </label>
+            </div>
+
+            <br>
+
+            <div id="criar">
+                <button type="submit">Criar conta</button>
+            </div>
+        </form>
+        <div id="entrar">
+            <p>
+                <a href="entrar.html">Já tenho conta. Entrar</a>
+            </p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
